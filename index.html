@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LawWise Nyai AI — AI for Lawyers Who Value Time</title>
+    <meta name="description"
+        content="LawWise Nyai AI is an AI-powered platform that helps lawyers and law firms automate research, drafting, and case analysis in minutes instead of hours." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="LawWise Nyai AI Home">
+                <span class="logo-mark"><img src="company-logo.png" alt="LawWise Nyai AI Logo" /></span>
+                <span>LAWWISE Nyai</span>
+            </a>
+            <div class="nav-pills-wrap">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#features">
+                            <span class="pill-circle"></span>
+                            <span class="pill-label-wrap"><span class="pill-label">Features</span><span
+                                    class="pill-label-hover">Features</span></span>
+                        </a></li>
+                    <li><a href="#lawyer-network">
+                            <span class="pill-circle"></span>
+                            <span class="pill-label-wrap"><span class="pill-label">Network</span><span
+                                    class="pill-label-hover">Network</span></span>
+                        </a></li>
+                    <li><a href="#founders">
+                            <span class="pill-circle"></span>
+                            <span class="pill-label-wrap"><span class="pill-label">About</span><span
+                                    class="pill-label-hover">About</span></span>
+                        </a></li>
+                    <li><a href="careers.html">
+                            <span class="pill-circle"></span>
+                            <span class="pill-label-wrap"><span class="pill-label">Career</span><span
+                                    class="pill-label-hover">Career</span></span>
+                        </a></li>
+                    <li><a href="contact.html" class="nav-cta">
+                            <span class="pill-circle"></span>
+                            <span class="pill-label-wrap"><span class="pill-label">Contact</span><span
+                                    class="pill-label-hover">Contact</span></span>
+                        </a></li>
+                </ul>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+        <!-- Waves Background -->
+        <div id="waves-container">
+            <canvas id="waves-canvas"></canvas>
+            <div id="waves-cursor"></div>
+        </div>
+        <div class="hero-inner">
+
+            <div class="hero-badge anim-fade-up">
+                <span class="badge-dot"></span> NOW IN EARLY DEVELOPMENT
+            </div>
+            <h1 class="hero-headline anim-fade-up" style="--delay:.1s">
+                AI for Lawyers<br />Who Value
+                <span class="rolodex-container" id="rolodexContainer">
+                    <span class="rolodex-word silver-gradient active">Efficiency.</span>
+                    <span class="rolodex-word silver-gradient">Time.</span>
+                    <span class="rolodex-word silver-gradient">Results.</span>
+                    <span class="rolodex-word silver-gradient">Precision.</span>
+                    <span class="rolodex-word silver-gradient">Clarity.</span>
+                </span>
+            </h1>
+            <p class="hero-sub anim-fade-up" style="--delay:.2s">
+                Research in minutes. Draft with precision. Analyse cases instantly.
+                Built to assist lawyers — not replace them.
+            </p>
+            <div class="hero-ctas anim-fade-up" style="--delay:.3s">
+                <a href="contact.html" class="btn silver-btn" id="cta-demo"><span class="btn-text">Contact Us</span></a>
+                <a href="careers.html" class="btn silver-btn" id="cta-access"><span class="btn-text">Join Our
+                        Team</span></a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ========== THE CHALLENGE ========== -->
+    <section id="challenge" class="section challenge-section">
+        <div class="container">
+            <div class="section-label anim-reveal">THE CHALLENGE</div>
+            <h2 class="section-title anim-reveal">
+                The Legal System is Brilliant.<br /><span class="silver-gradient">The Process is Not.</span>
+            </h2>
+
+            <div class="challenge-layout" style="display: flex; gap: 40px; flex-wrap: wrap; align-items: stretch;">
+                <div style="display: flex; flex-direction: column; gap: 20px; flex: 1; min-width: 300px;">
+                    <div class="bento-card anim-reveal" id="challenge-time" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                            <div class="bento-icon" style="margin-bottom: 0;">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="bento-index" style="margin-bottom: 4px;">01 / TIME DRAIN</div>
+                                <h3 style="margin-bottom: 0; font-size: 1.4rem;">5–8 Hours Lost Every Day
+                                </h3>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Lawyers spend hours doing repetitive research</li>
+                            <li>Drafting and reviewing documents take most of the day</li>
+                        </ul>
+                    </div>
+                    <div class="bento-card anim-reveal" id="challenge-workflows" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                            <div class="bento-icon" style="margin-bottom: 0;">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="bento-index" style="margin-bottom: 4px;">02 / INEFFICIENCY</div>
+                                <h3 style="margin-bottom: 0; font-size: 1.4rem;">70% Effort, Low Value</h3>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Too much time spent on manual tasks</li>
+                            <li>Skilled lawyers stuck doing repetitive work</li>
+                        </ul>
+                    </div>
+                    <div class="bento-card anim-reveal" id="challenge-productivity" style="padding: 24px;">
+                        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                            <div class="bento-icon" style="margin-bottom: 0;">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <line x1="12" y1="20" x2="12" y2="10" />
+                                    <polyline points="8 14 12 10 16 14" />
+                                    <line x1="4" y1="4" x2="20" y2="4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="bento-index" style="margin-bottom: 4px;">03 / IMPACT</div>
+                                <h3 style="margin-bottom: 0; font-size: 1.4rem;">Productivity Drops</h3>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Less time for important work</li>
+                            <li>Clients pay more while progress slows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="challenge-image-wrapper anim-reveal" style="flex: 1.2; min-width: 300px; display: flex;">
+                    <img src="stressed-man.jpg" alt="Lawyer reviewing documents"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 1rem; border: 1px solid var(--border-color);" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CAPABILITIES / FEATURES ========== -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <div class="section-label anim-reveal">CAPABILITIES</div>
+            <h2 class="section-title anim-reveal">Everything You Need to<br /><span class="silver-gradient">Practice
+                    Smarter</span></h2>
+
+            <div class="bento-grid">
+                <div class="bento-card anim-reveal" id="feature-research">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <div class="bento-index">01 / RESEARCH</div>
+                    <h3>AI Legal<br />Research</h3>
+                    <ul>
+                        <li>Get case laws and relevant precedents in minutes</li>
+                        <li>Context-aware legal search</li>
+                    </ul>
+                </div>
+                <div class="bento-card anim-reveal" id="feature-drafting">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                        </svg>
+                    </div>
+                    <div class="bento-index">02 / DRAFTING</div>
+                    <h3>Smart<br />Drafting</h3>
+                    <ul>
+                        <li>Generate petitions, notices, agreements instantly</li>
+                        <li>Customizable jurisdiction-based formats</li>
+                    </ul>
+                </div>
+                <div class="bento-card anim-reveal" id="feature-analysis">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <div class="bento-index">03 / ANALYSIS</div>
+                    <h3>Case<br />Analysis</h3>
+                    <ul>
+                        <li>Summarize judgments &amp; extract key arguments</li>
+                        <li>Identify winning patterns from past rulings</li>
+                    </ul>
+                </div>
+                <div class="bento-card anim-reveal" id="feature-security">
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="bento-index">04 / SECURITY</div>
+                    <h3>Enterprise<br />Security</h3>
+                    <ul>
+                        <li>End-to-end encrypted data at rest &amp; in transit</li>
+                        <li>Secure, SOC2-ready cloud architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LAWYER INTELLIGENCE NETWORK ========== -->
+    <section id="lawyer-network" class="section lin-section-v2">
+        <div class="container">
+            <div class="lin-outer-card anim-reveal">
+                <!-- Waves background inside card -->
+                <div id="lin-waves-container" class="lin-waves-bg">
+                    <canvas id="lin-waves-canvas"></canvas>
+                </div>
+
+                <div class="lin-outer-card-content">
+                    <div class="section-label">FOR LAWYERS</div>
+                    <h2 class="section-title" style="margin-bottom: 16px;">
+                        Your Legal Work,<br /><span class="silver-gradient">Verified &amp; Visible.</span>
+                    </h2>
+                    <p class="lin-v2-subtitle" style="margin-left: auto; margin-right: auto;">Build a professional
+                        profile backed by real case history. Get discovered. Grow your practice.</p>
+
+                    <!-- 3-card feature grid -->
+                    <div class="lin-v3-grid">
+                        <div class="lin-v3-card tilt-card anim-reveal" id="lin-profile" data-caption="Profile Setup">
+                            <div class="lin-v3-icon-wrap">
+                                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </div>
+                            <h3>Build Your Verified Legal <br>Profile</h3>
+                            <p class="lin-v3-desc">Create a professional profile backed by your real legal work.</p>
+                            <ul>
+                                <li>Add cases and judgments</li>
+                                <li>AI organizes your legal track record</li>
+                                <li>Showcase your areas of expertise</li>
+                            </ul>
+                        </div>
+
+                        <div class="lin-v3-card tilt-card anim-reveal" id="lin-reach" data-caption="Global Reach">
+                            <div class="lin-v3-icon-wrap">
+                                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="2" y1="12" x2="22" y2="12" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                                </svg>
+                            </div>
+                            <h3>Reach More Clients and Law Firms</h3>
+                            <p class="lin-v3-desc">Your profile becomes part of a professional legal network.</p>
+                            <ul>
+                                <li>Increase visibility to prospective clients</li>
+                                <li>Get discovered by law firms and collaborators</li>
+                                <li>Grow your professional reach</li>
+                            </ul>
+                        </div>
+
+                        <div class="lin-v3-card tilt-card anim-reveal" id="lin-platform" data-caption="Secure Hub">
+                            <div class="lin-v3-icon-wrap">
+                                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M3 9h18M9 21V9" />
+                                </svg>
+                            </div>
+                            <h3>One Platform for Your Legal Identity</h3>
+                            <p class="lin-v3-desc">Access everything through a dedicated platform built for lawyers.</p>
+                            <ul>
+                                <li>Professional legal network</li>
+                                <li>Case insights and organization</li>
+                                <li>Secure and lawyer-controlled</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Trust line -->
+                    <div class="lin-v3-trust">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        <span>Encrypted. Private. Lawyer-controlled.</span>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="lin-v3-cta">
+                        <a href="contact.html" class="btn silver-btn" id="cta-profile">
+                            <span class="btn-text">Create Your Lawyer Profile →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOUNDERS ========== -->
+    <section id="founders" class="section founders-section">
+        <div class="container">
+            <div class="section-label anim-reveal">OUR STORY</div>
+            <h2 class="section-title anim-reveal">Built by Young Innovators<br /><span
+                    class="silver-gradient">Reimagining Legal Work</span></h2>
+            <div class="founders-grid">
+                <div class="founder-card anim-reveal" id="founder-1">
+                    <div class="founder-img-wrapper">
+                        <img src="founder1.png" alt="Prateek Sharma — Co-Founder & CTO" loading="lazy" />
+                    </div>
+                    <h3>Prateek Sharma</h3>
+                    <p class="founder-role">Co-Founder &amp; CEO</p>
+                    <p class="founder-bio">Passionate about leveraging AI to transform legal practice. Leading the
+                        vision of making cutting-edge technology accessible to every lawyer.</p>
+                </div>
+                <div class="founder-card anim-reveal" id="founder-2">
+                    <div class="founder-img-wrapper">
+                        <img src="founder2.png" alt="Parthib Kashyap — Co-Founder & CEO" loading="lazy" />
+                    </div>
+                    <h3>Parthib Kashyap</h3>
+                    <p class="founder-role">Co-Founder &amp; CTO</p>
+                    <p class="founder-bio">Engineer and AI researcher building intelligent systems that understand the
+                        nuances of Indian law and legal reasoning.</p>
+                </div>
+            </div>
+            <div class="founders-badges anim-reveal">
+                <div class="fbadge">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                    Government-Recognized Startup
+                </div>
+                <div class="fbadge">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                    </svg>
+                    Raised ₹25 Lakh in Funding
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CAREERS TEASER ========== -->
+    <section id="careers" class="section careers-home-section">
+        <div class="container">
+            <div class="careers-home-inner anim-reveal">
+                <div class="section-label">CAREERS</div>
+                <h2 class="section-title">Careers at<br /><span class="silver-gradient">LawWise Nyai
+                        AI</span></h2>
+                <p class="lin-desc">We are building the intelligence layer for the legal system — and we are looking for
+                    exceptional individuals to build it with us.</p>
+                <p class="lin-desc">At LawWise Nyai AI, we operate at the intersection of law, data, and artificial
+                    intelligence. We are assembling a focused, high-caliber team committed to long-term impact in legal
+                    infrastructure.</p>
+                <a href="careers.html" class="btn silver-btn"><span class="btn-text">Explore Careers</span></a>
+                <span class="careers-home-note">We review every application carefully.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="nav-logo" aria-label="LawWise Nyai AI Home">
+                    <span class="logo-mark"><img src="company-logo.png" alt="LawWise Nyai AI Logo" /></span>
+                    <span>LAWWISE</span>
+                </a>
+                <p class="footer-tagline">AI-powered legal intelligence for modern lawyers.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#lawyer-network">Network</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#founders">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 LawWise Nyai AI Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="waves.js"></script>
+</body>
+
+</html>

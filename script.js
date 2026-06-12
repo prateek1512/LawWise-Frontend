@@ -1,8 +1,4 @@
-/* ====================================================
-   LawWise Nyai AI — JavaScript
-   Modern Obsidian Design System
-   Nav, typing effect, scroll reveal, smooth scroll
-   ==================================================== */
+/* =====LawWise Nyai AI — JavaScript===== */
 
 document.addEventListener('DOMContentLoaded', () => {
 

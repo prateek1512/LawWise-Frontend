@@ -1,6 +1,4 @@
-/* ============================
-   Contact & Apply Pages — Modern Obsidian
-   ============================ */
+/* =====Contact & Apply Pages CSS=====*/
 
 /* Contact Hero */
 .contact-hero {
@@ -277,7 +275,7 @@ a.info-value:hover {
     color: var(--silver-muted);
 }
 
-/* ========== APPLY PAGE ========== */
+/* ===== APPLY PAGE =====*/
 
 .apply-hero {
     position: relative;

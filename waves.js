@@ -1,7 +1,4 @@
-/**
- * InteractiveWavesBackground Logic ported to Vanilla JavaScript
- * Physics-based perlin noise rippling effect.
- */
+/* InteractiveWavesBackground */
 
 class Grad {
     constructor(x, y, z) {

@@ -1,6 +1,4 @@
-/* ============================
-   Careers Page — Modern Obsidian
-   ============================ */
+/* =====Careers Page CSS=====*/
 
 /* Hero */
 .careers-hero {
@@ -24,7 +22,6 @@
 
 
 /* Why Grid */
-
 .why-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,8 +62,6 @@
 }
 
 /* Roles */
-
-
 .roles-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -145,8 +140,6 @@
 }
 
 /* Values */
-
-
 .values-grid {
     display: flex;
     flex-wrap: wrap;

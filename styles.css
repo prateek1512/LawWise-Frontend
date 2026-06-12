@@ -1,12 +1,9 @@
-/* ============================
-   LawWise Nyai AI — Modern Obsidian Design System
-   Dark monochrome · Editorial serif · Frosted glass
-   ============================ */
+/* ===== LawWise Nyai AI — CSS ====*/
 
 /* ---------- FONTS ---------- */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
 
-/* Geist Mono via CDN */
+/* Geist Mono */
 @font-face {
     font-family: 'Geist Mono';
     src: url('https://cdn.jsdelivr.net/gh/nicbarker/GeistMono@main/GeistMono-Regular.woff2') format('woff2');
@@ -253,7 +250,7 @@ img {
     gap: 8px;
 }
 
-/* --- Outline Button (unchanged) --- */
+/* --- Outline Button --- */
 .btn-outline {
     background: transparent;
     color: var(--silver);
@@ -603,7 +600,6 @@ img {
     justify-items: start;
     align-items: end;
     vertical-align: bottom;
-    /* better alignment with adjacent text */
     perspective: 800px;
     text-align: left;
     overflow: visible;
@@ -612,7 +608,6 @@ img {
 
 .rolodex-word {
     grid-area: word;
-    /* All words occupy the same grid cell */
     display: inline-block;
     white-space: nowrap;
     transform-style: preserve-3d;
@@ -689,21 +684,18 @@ img {
     border: 1px solid var(--border-color);
     border-radius: 1rem;
     background: #EEF2FC;
-    /* Updated idle color */
-    transition: all 0.3s var(--ease-out);
+\    transition: all 0.3s var(--ease-out);
     position: relative;
 }
 
 .bento-card:hover {
     background: #E6EBF7;
-    /* Darker on hover */
-    border-color: var(--border-hover);
+\    border-color: var(--border-hover);
 }
 
 .bento-icon {
     color: #1B1B2F;
-    /* Darker for visibility on light bg */
-    margin-bottom: 24px;
+\    margin-bottom: 24px;
 }
 
 .bento-index {
@@ -712,8 +704,7 @@ img {
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #4A5568;
-    /* Darker for visibility */
-    margin-bottom: 24px;
+\    margin-bottom: 24px;
     opacity: 0.8;
 }
 
@@ -723,8 +714,7 @@ img {
     font-size: clamp(1.4rem, 2.5vw, 2rem);
     font-weight: 400;
     color: #1B1B2F;
-    /* Dark for visibility */
-    margin-bottom: 16px;
+\    margin-bottom: 16px;
     line-height: 1;
 }
 
@@ -733,8 +723,7 @@ img {
     font-family: var(--font-mono);
     font-size: 12px;
     color: #2D3748;
-    /* Dark for visibility */
-    line-height: 1.7;
+\    line-height: 1.7;
     letter-spacing: 0.02em;
 }
 
@@ -749,11 +738,10 @@ img {
     position: absolute;
     left: 0;
     color: #4A5568;
-    /* Darker bullet */
-    opacity: 0.6;
+\    opacity: 0.6;
 }
 
-/* ---------- LIN SECTION V2 — PREMIUM REDESIGN ---------- */
+/* ---------- LIN SECTION ---------- */
 
 .lin-section-v2 {
     position: relative;
@@ -808,7 +796,7 @@ img {
     max-width: 600px;
 }
 
-/* ---------- LIN V3 — 3-CARD LAWYER GRID ---------- */
+/* ---------- LIN 3-CARD LAWYER GRID ---------- */
 
 .lin-v3-grid {
     display: grid;
@@ -960,7 +948,7 @@ img {
     text-align: center;
 }
 
-/* ---------- LIN V3 RESPONSIVE ---------- */
+/* ---------- LIN RESPONSIVE ---------- */
 
 @media (max-width: 1024px) {
     .lin-v3-grid {
